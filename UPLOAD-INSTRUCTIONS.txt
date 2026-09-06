@@ -1,0 +1,11 @@
+FILES TO UPLOAD TO THE ROOT OF jubran-website
+
+1) when-money-invests-law-comes-first.html
+2) publications.html   (replace the existing file)
+3) sitemap.xml         (replace the existing file)
+
+Important:
+- Extract this ZIP first. GitHub does not automatically unpack ZIP uploads into the repository.
+- Upload the three files to the repository root (same level as index.html and insight.css).
+- If GitHub asks about replacing existing files, replace publications.html and sitemap.xml.
+- The article page uses the existing insight.css already in your repository.
