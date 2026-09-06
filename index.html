@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jubran Alsughayyir | Saudi Legal Professional & Researcher</title>
-  <meta name="description" content="Official website of Jubran Alsughayyir, a Saudi legal specialist with experience across corporate and commercial transactions, private equity due diligence, investment funds, finance, governance, regulatory matters, disputes, arbitration preparation and legal research in Saudi Arabia." />
+  <meta name="description" content="Official website of Jubran Alsughayyir, a Saudi legal professional working across corporate transactions, private equity, finance, investment funds, governance, construction and EPC contracts, commercial litigation, arbitration, regulatory matters and legal research in Saudi Arabia." />
   <meta name="keywords" content="Jubran Alsughayyir, Jubran Al-Sughayyir, جبران الصغير, Saudi legal specialist, Riyadh legal professional, corporate law Saudi Arabia, M&A Saudi Arabia, private equity legal due diligence, investment funds Saudi Arabia, finance law Saudi Arabia, governance Saudi Arabia, regulatory compliance Saudi Arabia, commercial contracts Saudi Arabia, arbitration Saudi Arabia, disputes Saudi Arabia, legal research Saudi Arabia" />
   <meta name="author" content="Jubran Alsughayyir" />
   <meta property="og:title" content="Jubran Alsughayyir | Law, Business & Research" />
@@ -103,8 +103,32 @@
     .footline{margin-top:65px;padding-top:20px;border-top:1px solid #343a36;display:flex;justify-content:space-between;color:#9da59f;font-size:12px}
     .rtl h1,.rtl h2,.rtl .brand,.rtl .paper h3,.rtl .role strong,.rtl .degree strong,.rtl .insight h3{font-family:Tahoma,Arial,sans-serif;letter-spacing:-.02em}
     .rtl .hero-copy{padding-right:max(40px,calc((100vw - var(--max))/2 + 40px));padding-left:6vw}
+
+    .hero-proof{display:flex;gap:10px 20px;flex-wrap:wrap;margin-top:6px;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.08em}
+    .hero-proof span{white-space:nowrap}
+    .metrics{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);margin-top:44px}
+    .metric{padding:24px 26px 24px 0}
+    .metric:not(:last-child){border-right:1px solid var(--line);padding-left:26px}
+    .metric:first-child{padding-left:0}
+    .metric strong{display:block;font:500 42px/1 Georgia,serif;letter-spacing:-.04em}
+    .metric span{display:block;margin-top:8px;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.1em}
+    .matters-grid{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--ink)}
+    .matter{padding:34px 34px 38px 0;border-bottom:1px solid var(--line);min-height:245px}
+    .matter:nth-child(odd){border-right:1px solid var(--line);padding-right:34px}
+    .matter:nth-child(even){padding-left:34px}
+    .matter .meta{font-size:11px;text-transform:uppercase;letter-spacing:.14em;color:var(--muted)}
+    .matter h3{font:500 29px/1.12 Georgia,serif;margin:16px 0 13px}
+    .matter p{color:var(--muted);font-size:14px;margin:0;max-width:520px}
+    .cap-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ink)}
+    .cap{padding:26px 22px 30px 0;border-bottom:1px solid var(--line)}
+    .cap:not(:nth-child(4n)){border-right:1px solid var(--line)}
+    .cap:not(:nth-child(4n+1)){padding-left:22px}
+    .cap h3{font:500 21px/1.2 Georgia,serif;margin:0 0 10px}
+    .cap p{font-size:13px;color:var(--muted);margin:0}
+    .section-note{max-width:760px;color:var(--muted);font-size:16px;margin:-30px 0 46px 285px}
+    .confidential-note{margin-top:28px;color:var(--muted);font-size:12px;font-style:italic}
     @media(max-width:900px){
-      .navlinks a{display:none}.wrap{padding:0 22px}.hero{grid-template-columns:1fr}.hero-copy{padding:100px 22px 70px}.hero-art{min-height:420px}.section{padding:72px 22px}.section-head,.exp-grid,.insights,.credentials,.footer-top{grid-template-columns:1fr}.research-grid{grid-template-columns:1fr}.paper,.paper:not(:last-child),.paper:first-child{padding:28px 0;border-right:0}.role{grid-template-columns:1fr}.footer{padding-left:22px;padding-right:22px}h1{font-size:64px}}
+      .navlinks a{display:none}.wrap{padding:0 22px}.hero{grid-template-columns:1fr}.hero-copy{padding:100px 22px 70px}.hero-art{min-height:420px}.section{padding:72px 22px}.section-head,.exp-grid,.insights,.credentials,.footer-top{grid-template-columns:1fr}.research-grid,.matters-grid,.cap-grid,.metrics{grid-template-columns:1fr}.matter,.matter:nth-child(odd),.matter:nth-child(even),.cap,.cap:not(:nth-child(4n+1)){padding:26px 0;border-right:0}.metric,.metric:not(:last-child),.metric:first-child{padding:20px 0;border-right:0;border-bottom:1px solid var(--line)}.metric:last-child{border-bottom:0}.section-note{margin:-25px 0 38px}.paper,.paper:not(:last-child),.paper:first-child{padding:28px 0;border-right:0}.role{grid-template-columns:1fr}.footer{padding-left:22px;padding-right:22px}h1{font-size:64px}}
   </style>
 </head>
 <body>
@@ -115,7 +139,6 @@
       <a href="about.html" data-en="About" data-ar="نبذة">About</a>
       <a href="experience.html" data-en="Experience" data-ar="الخبرة">Experience</a>
       <a href="publications.html" data-en="Publications" data-ar="الأبحاث">Publications</a>
-      <a href="insights.html" data-en="Insights" data-ar="مقالات">Insights</a>
       <a href="credentials.html" data-en="Credentials" data-ar="المؤهلات">Credentials</a>
       <a href="contact.html" data-en="Contact" data-ar="تواصل">Contact</a>
       <button class="lang" id="langBtn">العربية</button>
@@ -125,16 +148,61 @@
 <main id="top">
   <section class="hero" id="about">
     <div class="hero-copy">
-      <div class="eyebrow" data-en="Legal Specialist · Corporate · Transactions · Governance · Disputes" data-ar="أخصائي قانوني · الشركات · الصفقات · الحوكمة · المنازعات">Legal Specialist · Corporate · Transactions · Governance · Disputes</div>
+      <div class="eyebrow" data-en="Saudi Legal Professional · Corporate · Transactions · Governance · Disputes" data-ar="مهني قانوني سعودي · الشركات · الصفقات · الحوكمة · المنازعات">Saudi Legal Professional · Corporate · Transactions · Governance · Disputes</div>
       <h1 data-en="Jubran Alsughayyir" data-ar="جبران الصغير">Jubran Alsughayyir</h1>
-      <p data-en="Saudi legal specialist with experience supporting corporate and commercial transactions, private equity due diligence, investment and financing structures, governance, regulatory matters, complex contracts, disputes and arbitration preparation." data-ar="أخصائي قانوني سعودي بخبرة في دعم صفقات الشركات والعقود التجارية، والفحص النافي للجهالة في صفقات الملكية الخاصة، وهياكل الاستثمار والتمويل، والحوكمة، والمسائل التنظيمية، والعقود المعقدة، والمنازعات والتحضير للتحكيم.">Saudi legal specialist with experience supporting corporate and commercial transactions, private equity due diligence, investment and financing structures, governance, regulatory matters, complex contracts, disputes and arbitration preparation.</p>
+      <p data-en="Saudi legal professional working across corporate transactions, investment and financing matters, governance, complex commercial contracts, regulatory issues and disputes. Experience includes legal due diligence, transaction and SPV structuring support, investment fund and sukuk-related documentation, major construction and EPC contract review, high-value commercial claims and arbitration preparation." data-ar="مهني قانوني سعودي يعمل في صفقات الشركات والاستثمار والتمويل والحوكمة والعقود التجارية المعقدة والمسائل التنظيمية والمنازعات. تشمل الخبرة الفحص النافي للجهالة، ودعم هياكل الصفقات والشركات ذات الغرض الخاص، ومستندات الصناديق والصكوك، ومراجعة عقود المقاولات وEPC للمشاريع الكبرى، والمطالبات التجارية عالية القيمة، والتحضير للتحكيم.">Saudi legal professional working across corporate transactions, investment and financing matters, governance, complex commercial contracts, regulatory issues and disputes. Experience includes legal due diligence, transaction and SPV structuring support, investment fund and sukuk-related documentation, major construction and EPC contract review, high-value commercial claims and arbitration preparation.</p>
+      <div class="hero-proof"><span>Corporate Transactions</span><span>Private Equity</span><span>Finance</span><span>Investment Funds</span><span>Construction & EPC</span><span>Arbitration</span><span>Regulatory</span></div>
       <div class="hero-links">
-        <a class="primary" href="publications.html" data-en="Research & Publications →" data-ar="الأبحاث والمنشورات ←">Research & Publications →</a>
-        <a class="secondary" href="experience.html" data-en="Selected experience" data-ar="خبرات مختارة">Selected experience</a>
+        <a class="primary" href="#selected-matters" data-en="Selected matters →" data-ar="أبرز الأعمال ←">Selected matters →</a>
+        <a class="secondary" href="publications.html" data-en="Research & Publications" data-ar="الأبحاث والمنشورات">Research & Publications</a>
       </div>
     </div>
     <div class="hero-art" aria-label="Abstract Saudi architectural composition"><div class="art-label" data-en="Law. Business. Research." data-ar="قانون. أعمال. بحث.">Law. Business. Research.</div></div>
   </section>
+  <section id="selected-matters">
+    <div class="section">
+      <div class="section-head"><div class="kicker" data-en="Representative experience" data-ar="خبرة تمثيلية">Representative experience</div><h2 data-en="Selected Matters" data-ar="أبرز الأعمال والملفات">Selected Matters</h2></div>
+      <p class="section-note" data-en="A selection of transaction, project, regulatory and dispute work. Client and counterparty identities are omitted where appropriate." data-ar="نماذج مختارة من أعمال الصفقات والمشاريع والمسائل التنظيمية والمنازعات، مع عدم إظهار هويات العملاء والأطراف عند الاقتضاء.">A selection of transaction, project, regulatory and dispute work. Client and counterparty identities are omitted where appropriate.</p>
+      <div class="metrics">
+        <div class="metric"><strong>SAR 300M</strong><span data-en="Financing / SBLC structure" data-ar="هيكل تمويل / اعتماد احتياطي">Financing / SBLC structure</span></div>
+        <div class="metric"><strong>SAR 40M+</strong><span data-en="Aggregate commercial claims" data-ar="إجمالي مطالبات تجارية">Aggregate commercial claims</span></div>
+        <div class="metric"><strong>SAR 5M+</strong><span data-en="Customs / regulatory exposure" data-ar="تعرض جمركي / تنظيمي">Customs / regulatory exposure</span></div>
+      </div>
+      <div class="matters-grid">
+        <article class="matter"><div class="meta">Finance · Cross-Border</div><h3 data-en="SAR 300M Financing / SBLC Structure" data-ar="هيكل تمويل / SBLC بقيمة 300 مليون ريال">SAR 300M Financing / SBLC Structure</h3><p data-en="Reviewed transaction documentation and legal mechanics relating to a SAR 300 million standby letter of credit and financing structure, including cross-border documentation and transaction terms." data-ar="مراجعة مستندات الصفقة وآلياتها القانونية المتعلقة باعتماد مستندي احتياطي وهيكل تمويل بقيمة 300 مليون ريال، بما في ذلك المستندات العابرة للحدود وشروط الصفقة.">Reviewed transaction documentation and legal mechanics relating to a SAR 300 million standby letter of credit and financing structure, including cross-border documentation and transaction terms.</p></article>
+        <article class="matter"><div class="meta">Private Equity · Due Diligence</div><h3 data-en="Private Equity Acquisition & Legal Due Diligence" data-ar="استحواذ ملكية خاصة وفحص نافي للجهالة">Private Equity Acquisition & Legal Due Diligence</h3><p data-en="Supported legal due diligence and transaction review for a proposed acquisition of a Saudi operating company, including SPV structuring, corporate documentation, transaction risks and acquisition-related legal review." data-ar="دعم الفحص النافي للجهالة ومراجعة صفقة استحواذ مقترحة على شركة تشغيلية سعودية، بما يشمل هيكلة شركة ذات غرض خاص، ومستندات الشركات، ومخاطر الصفقة والمراجعة القانونية المرتبطة بالاستحواذ.">Supported legal due diligence and transaction review for a proposed acquisition of a Saudi operating company, including SPV structuring, corporate documentation, transaction risks and acquisition-related legal review.</p></article>
+        <article class="matter"><div class="meta">Commercial Litigation · Results</div><h3 data-en="High-Value Commercial Claims — SAR 40M+" data-ar="مطالبات تجارية عالية القيمة — أكثر من 40 مليون ريال">High-Value Commercial Claims — SAR 40M+</h3><p data-en="Drafted and supported pleadings and legal submissions in several commercial financial claims arising from business transactions, with an aggregate claim value exceeding SAR 40 million, resulting in favorable judgments for the clients." data-ar="إعداد ودعم لوائح ومذكرات في عدة مطالبات مالية ناشئة عن تعاملات تجارية تجاوزت قيمتها الإجمالية 40 مليون ريال، وانتهت بأحكام لصالح العملاء.">Drafted and supported pleadings and legal submissions in several commercial financial claims arising from business transactions, with an aggregate claim value exceeding SAR 40 million, resulting in favorable judgments for the clients.</p></article>
+        <article class="matter"><div class="meta">Projects · Construction · EPC</div><h3 data-en="Major CCGT / EPC Contract & Project Review" data-ar="مراجعة عقود ومشروع CCGT / EPC كبير">Major CCGT / EPC Contract & Project Review</h3><p data-en="Reviewed construction-related contracts, project correspondence and contractual frameworks for a major CCGT power project involving international EPC parties. Analysis covered contractual effectiveness, owner-approval requirements, access constraints, delay, extension of time, prolongation, notices and potential entitlement." data-ar="مراجعة عقود مقاولات ومراسلات وأطر تعاقدية لمشروع توليد طاقة CCGT كبير مع أطراف EPC دولية، وشمل التحليل نفاذ العقد، ومتطلبات موافقة المالك، وقيود الوصول، والتأخير، وتمديد المدة، والتكاليف الممتدة، والإشعارات والاستحقاقات المحتملة.">Reviewed construction-related contracts, project correspondence and contractual frameworks for a major CCGT power project involving international EPC parties. Analysis covered contractual effectiveness, owner-approval requirements, access constraints, delay, extension of time, prolongation, notices and potential entitlement.</p></article>
+        <article class="matter"><div class="meta">Construction Claims · Arbitration</div><h3 data-en="Major Construction Claims & Arbitration Preparation" data-ar="مطالبات إنشائية كبرى والتحضير للتحكيم">Major Construction Claims & Arbitration Preparation</h3><p data-en="Supported legal analysis of substantial construction-related claims involving delay, access constraints, extension-of-time issues, prolongation costs, contractual entitlement, settlement strategy and arbitration preparation." data-ar="دعم التحليل القانوني لمطالبات إنشائية كبيرة تتعلق بالتأخير وقيود الوصول وتمديد المدة وتكاليف الإطالة والاستحقاق التعاقدي واستراتيجية التسوية والتحضير للتحكيم.">Supported legal analysis of substantial construction-related claims involving delay, access constraints, extension-of-time issues, prolongation costs, contractual entitlement, settlement strategy and arbitration preparation.</p></article>
+        <article class="matter"><div class="meta">Customs · Technical Evidence</div><h3 data-en="Customs Classification Dispute — SAR 5M+ Exposure" data-ar="نزاع تصنيف جمركي — تعرض يتجاوز 5 ملايين ريال">Customs Classification Dispute — SAR 5M+ Exposure</h3><p data-en="Worked on a technical customs classification dispute involving exposure exceeding SAR 5 million, requiring analysis of HS classification rules, product specifications, manufacturer evidence, customs documentation and Saudi regulatory requirements." data-ar="العمل على نزاع فني في التصنيف الجمركي بتعرض يتجاوز 5 ملايين ريال، تطلب تحليل قواعد التصنيف المنسق والمواصفات الفنية وأدلة المصنع والمستندات الجمركية والمتطلبات التنظيمية السعودية.">Worked on a technical customs classification dispute involving exposure exceeding SAR 5 million, requiring analysis of HS classification rules, product specifications, manufacturer evidence, customs documentation and Saudi regulatory requirements.</p></article>
+        <article class="matter"><div class="meta">Funds · Sukuk · Security</div><h3 data-en="Investment Funds, Finance & Sukuk" data-ar="الصناديق الاستثمارية والتمويل والصكوك">Investment Funds, Finance & Sukuk</h3><p data-en="Supported review of investment fund documentation, financing arrangements, custody and security structures, sukuk-related documents and transaction terms involving regulated investment activities." data-ar="دعم مراجعة مستندات الصناديق الاستثمارية وترتيبات التمويل والحفظ والضمان ومستندات مرتبطة بالصكوك وشروط صفقات ضمن أنشطة استثمارية منظمة.">Supported review of investment fund documentation, financing arrangements, custody and security structures, sukuk-related documents and transaction terms involving regulated investment activities.</p></article>
+        <article class="matter"><div class="meta">JV · Franchise · Cross-Border</div><h3 data-en="Cross-Border JV, Franchise & Strategic Agreements" data-ar="مشاريع مشتركة وامتياز واتفاقيات استراتيجية عابرة للحدود">Cross-Border JV, Franchise & Strategic Agreements</h3><p data-en="Reviewed and drafted joint venture arrangements, franchise amendments, commercial agreements and complex contractual amendments involving Saudi and international counterparties." data-ar="مراجعة وصياغة ترتيبات مشاريع مشتركة وتعديلات امتياز واتفاقيات تجارية وتعديلات تعاقدية معقدة مع أطراف سعودية ودولية.">Reviewed and drafted joint venture arrangements, franchise amendments, commercial agreements and complex contractual amendments involving Saudi and international counterparties.</p></article>
+        <article class="matter"><div class="meta">Compliance · HR · Finance Policies</div><h3 data-en="Corporate Policies, HR & Finance Compliance" data-ar="سياسات الشركات والموارد البشرية والمالية والامتثال">Corporate Policies, HR & Finance Compliance</h3><p data-en="Reviewed and revised multiple HR policies for alignment with applicable Saudi employment and regulatory requirements, and reviewed finance and accounting policies to strengthen legal compliance, internal governance and policy consistency." data-ar="مراجعة وتعديل عدد من سياسات الموارد البشرية للتأكد من توافقها مع المتطلبات العمالية والتنظيمية السعودية، إضافة إلى مراجعة سياسات مالية ومحاسبية لتعزيز الامتثال القانوني والحوكمة الداخلية واتساق السياسات.">Reviewed and revised multiple HR policies for alignment with applicable Saudi employment and regulatory requirements, and reviewed finance and accounting policies to strengthen legal compliance, internal governance and policy consistency.</p></article>
+      </div>
+      <p class="confidential-note" data-en="Representative matters are described at a high level to preserve client confidentiality." data-ar="تم وصف الأعمال التمثيلية بصورة عامة حفاظاً على سرية العملاء.">Representative matters are described at a high level to preserve client confidentiality.</p>
+    </div>
+  </section>
+
+  <section id="capabilities">
+    <div class="section">
+      <div class="section-head"><div class="kicker" data-en="Practice strengths" data-ar="القدرات المهنية">Practice strengths</div><h2 data-en="Core Legal Capabilities" data-ar="القدرات القانونية الأساسية">Core Legal Capabilities</h2></div>
+      <div class="cap-grid">
+        <div class="cap"><h3>Corporate & Transactions</h3><p>Transaction support, corporate structuring, SPVs, approvals and commercial documentation.</p></div>
+        <div class="cap"><h3>Legal Due Diligence</h3><p>Corporate, contractual, governance, regulatory and transaction-focused legal review.</p></div>
+        <div class="cap"><h3>Construction & EPC</h3><p>Major project contracts, correspondence, notices, delay, EOT, prolongation and risk allocation.</p></div>
+        <div class="cap"><h3>Finance & Investment</h3><p>Financing documents, investment funds, custody/security arrangements and sukuk-related work.</p></div>
+        <div class="cap"><h3>Commercial Contracts</h3><p>JV, franchise, NDA, MOU, services, procurement, amendments and strategic agreements.</p></div>
+        <div class="cap"><h3>Governance & Compliance</h3><p>Governance reviews, regulatory analysis, internal policies and government-facing matters.</p></div>
+        <div class="cap"><h3>Litigation & Claims</h3><p>Pleadings, legal memoranda, financial claims, evidence review and contractual dispute analysis.</p></div>
+        <div class="cap"><h3>Arbitration & Claims</h3><p>Delay and entitlement analysis, settlement positioning and arbitration preparation.</p></div>
+        <div class="cap"><h3>HR Policies</h3><p>Review and amendment of HR and employment policies for Saudi legal and regulatory alignment.</p></div>
+        <div class="cap"><h3>Finance Policies</h3><p>Legal and compliance review of finance and accounting policies and internal governance controls.</p></div>
+        <div class="cap"><h3>Regulatory & Customs</h3><p>Administrative and regulatory analysis, customs classification and technical-evidence matters.</p></div>
+        <div class="cap"><h3>Legal Research</h3><p>Comparative research, legal opinions, regulatory analysis and publication-oriented writing.</p></div>
+      </div>
+    </div>
+  </section>
+
 
   <section id="publications">
     <div class="section">
@@ -154,36 +222,17 @@
   <section class="experience" id="experience">
     <div class="section exp-grid">
       <div class="exp-intro">
-        <div class="kicker" data-en="Selected experience" data-ar="خبرات مختارة">Selected experience</div>
-        <h2 data-en="Law in practice, not in abstraction." data-ar="القانون في الممارسة، لا في التجريد.">Law in practice, not in abstraction.</h2>
-        <p class="quote" data-en="Experience aligned with the work of international firms, major corporates and public-sector institutions: transactions, finance, governance, regulation, contracts and complex disputes." data-ar="خبرة متوافقة مع طبيعة عمل المكاتب الدولية والشركات الكبرى والجهات العامة: الصفقات، والتمويل، والحوكمة، والتنظيم، والعقود، والمنازعات المعقدة.">Experience aligned with the work of international firms, major corporates and public-sector institutions: transactions, finance, governance, regulation, contracts and complex disputes.</p>
+        <div class="kicker" data-en="Professional experience" data-ar="الخبرة المهنية">Professional experience</div>
+        <h2 data-en="Transactions, projects and disputes." data-ar="صفقات ومشاريع ومنازعات.">Transactions, projects and disputes.</h2>
+        <p class="quote" data-en="Experience across corporate transactions, finance, governance, regulatory matters and complex disputes involving Saudi and cross-border businesses." data-ar="خبرة في صفقات الشركات والتمويل والحوكمة والمسائل التنظيمية والمنازعات المعقدة المرتبطة بأعمال سعودية وعابرة للحدود.">Experience across corporate transactions, finance, governance, regulatory matters and complex disputes involving Saudi and cross-border businesses.</p>
       </div>
       <div class="roles">
-        <div class="role"><span>Current</span><div><strong data-en="Legal Solutions · Legal Specialist / Associate" data-ar="Legal Solutions · أخصائي / باحث قانوني">Legal Solutions · Legal Specialist / Associate</strong><p data-en="2026–Present · Supporting corporate, transactional, regulatory and dispute matters for Saudi and cross-border clients." data-ar="2026–حتى الآن · دعم مسائل الشركات والصفقات والتنظيم والمنازعات لعملاء محليين ودوليين.">2026–Present · Supporting corporate, transactional, regulatory and dispute matters for Saudi and cross-border clients.</p></div></div>
-        <div class="role"><span>Corporate / M&A</span><div><strong data-en="Corporate, M&A & Private Equity" data-ar="الشركات والاستحواذ والملكية الخاصة">Corporate, M&A & Private Equity</strong><p data-en="Legal due diligence, share and asset transaction support, SPV structuring, governance reviews, corporate approvals and transaction document review." data-ar="الفحص النافي للجهالة، دعم صفقات الأسهم والأصول، هيكلة الشركات ذات الغرض الخاص، مراجعات الحوكمة، الموافقات المؤسسية ومراجعة مستندات الصفقات.">Legal due diligence, share and asset transaction support, SPV structuring, governance reviews, corporate approvals and transaction document review.</p></div></div>
-        <div class="role"><span>Finance / Funds</span><div><strong data-en="Finance, Investment Funds & Sukuk" data-ar="التمويل والصناديق والصكوك">Finance, Investment Funds & Sukuk</strong><p data-en="Experience reviewing financing structures, fund documentation, custody and security arrangements, sukuk-related documentation and investment transaction terms." data-ar="خبرة في مراجعة هياكل التمويل، ومستندات الصناديق، وترتيبات الحفظ والضمان، ومستندات مرتبطة بالصكوك وشروط الصفقات الاستثمارية.">Experience reviewing financing structures, fund documentation, custody and security arrangements, sukuk-related documentation and investment transaction terms.</p></div></div>
-        <div class="role"><span>Contracts</span><div><strong data-en="Commercial Contracts & Strategic Projects" data-ar="العقود التجارية والمشاريع الاستراتيجية">Commercial Contracts & Strategic Projects</strong><p data-en="Drafting and reviewing commercial agreements, franchise and JV arrangements, service contracts, procurement terms, construction-related documents and complex amendments." data-ar="صياغة ومراجعة الاتفاقيات التجارية، وترتيبات الامتياز والمشاريع المشتركة، وعقود الخدمات، وشروط المشتريات، ومستندات مرتبطة بالإنشاءات والتعديلات التعاقدية المعقدة.">Drafting and reviewing commercial agreements, franchise and JV arrangements, service contracts, procurement terms, construction-related documents and complex amendments.</p></div></div>
-        <div class="role"><span>Disputes</span><div><strong data-en="Disputes, Arbitration & Claims" data-ar="المنازعات والتحكيم والمطالبات">Disputes, Arbitration & Claims</strong><p data-en="Pleadings, claim and delay analysis, evidence review, settlement positioning and arbitration preparation in commercial and construction-related disputes." data-ar="إعداد المذكرات، وتحليل المطالبات والتأخير، ومراجعة الأدلة، وتقييم التسوية، والتحضير للتحكيم في المنازعات التجارية والمرتبطة بالمشاريع.">Pleadings, claim and delay analysis, evidence review, settlement positioning and arbitration preparation in commercial and construction-related disputes.</p></div></div>
-        <div class="role"><span>Regulatory</span><div><strong data-en="Governance, Compliance & Regulatory Matters" data-ar="الحوكمة والامتثال والمسائل التنظيمية">Governance, Compliance & Regulatory Matters</strong><p data-en="Governance and policy review, regulatory analysis, government-facing matters, customs classification disputes, employment advice and internal compliance support." data-ar="مراجعة الحوكمة والسياسات، والتحليل التنظيمي، والمسائل المرتبطة بالجهات الحكومية، ومنازعات التصنيف الجمركي، والاستشارات العمالية ودعم الامتثال الداخلي.">Governance and policy review, regulatory analysis, government-facing matters, customs classification disputes, employment advice and internal compliance support.</p></div></div>
-        <div class="role"><span>Earlier</span><div><strong data-en="Al-Shahrani Law Firm · Trainee Lawyer" data-ar="مكتب الشهراني للمحاماة · محامٍ متدرب">Al-Shahrani Law Firm · Trainee Lawyer</strong><p data-en="2022–2023 · Litigation exposure across commercial, criminal, labor and personal status matters, including legal research, pleadings and case preparation." data-ar="2022–2023 · خبرة في التقاضي في القضايا التجارية والجنائية والعمالية والأحوال الشخصية، بما يشمل البحث القانوني وإعداد المذكرات وتجهيز القضايا.">2022–2023 · Litigation exposure across commercial, criminal, labor and personal status matters, including legal research, pleadings and case preparation.</p></div></div>
+        <div class="role"><span>2026–Present</span><div><strong data-en="Legal Solutions · Legal Specialist / Associate" data-ar="Legal Solutions · أخصائي قانوني / Associate">Legal Solutions · Legal Specialist / Associate</strong><p data-en="Supporting corporate, investment and commercial clients across transactional, regulatory and dispute matters, including legal due diligence, governance, financing and investment documentation, commercial contracts, regulatory analysis, internal policies, litigation support and arbitration preparation." data-ar="دعم عملاء من الشركات والاستثمار والأعمال في الصفقات والمسائل التنظيمية والمنازعات، بما يشمل الفحص النافي للجهالة والحوكمة ومستندات التمويل والاستثمار والعقود التجارية والتحليل التنظيمي والسياسات الداخلية ودعم التقاضي والتحضير للتحكيم.">Supporting corporate, investment and commercial clients across transactional, regulatory and dispute matters, including legal due diligence, governance, financing and investment documentation, commercial contracts, regulatory analysis, internal policies, litigation support and arbitration preparation.</p></div></div>
+        <div class="role"><span>Earlier</span><div><strong data-en="Al-Shahrani Law Firm · Trainee Lawyer" data-ar="مكتب الشهراني للمحاماة · محامٍ متدرب">Al-Shahrani Law Firm · Trainee Lawyer</strong><p data-en="Litigation exposure across commercial, criminal, labor and personal status matters, including legal research, pleadings and case preparation." data-ar="خبرة في التقاضي في القضايا التجارية والجنائية والعمالية والأحوال الشخصية، بما يشمل البحث القانوني وإعداد اللوائح والمذكرات وتجهيز القضايا.">Litigation exposure across commercial, criminal, labor and personal status matters, including legal research, pleadings and case preparation.</p></div></div>
       </div>
     </div>
   </section>
-
-  <section id="insights">
-    <div class="section insights">
-      <div>
-        <div class="kicker" data-en="Writing" data-ar="الكتابة">Writing</div>
-        <h2 data-en="Recent Insights" data-ar="أحدث المقالات">Recent Insights</h2>
-      </div>
-      <div class="insight-list">
-        <article class="insight"><time>2026</time><div><h3 data-en="Customs classification and technical proof" data-ar="التصنيف الجمركي والإثبات الفني">Customs classification and technical proof</h3><p data-en="Research note in development." data-ar="مذكرة بحثية قيد الإعداد.">Research note in development.</p></div></article>
-        <article class="insight"><time>2026</time><div><h3 data-en="Saudi legal practice: research into action" data-ar="الممارسة القانونية السعودية: من البحث إلى التطبيق">Saudi legal practice: research into action</h3><p data-en="Editorial series planned for the publication library." data-ar="سلسلة مقالات مخطط لها ضمن مكتبة المنشورات.">Editorial series planned for the publication library.</p></div></article>
-      </div>
-    </div>
-  </section>
-
-  <section id="credentials">
+<section id="credentials">
     <div class="section credentials">
       <div><div class="kicker" data-en="Education" data-ar="التعليم">Education</div><h2 data-en="Credentials" data-ar="المؤهلات">Credentials</h2></div>
       <div>
