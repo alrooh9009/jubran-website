@@ -6,6 +6,21 @@
   const saved = localStorage.getItem('site-lang');
   let ar = saved === 'ar';
 
+  // Replace the old inline "J" favicon used by the main pages with the new JA identity.
+  const installFavicon = () => {
+    document.querySelectorAll('link[rel="icon"], link[rel="shortcut icon"], link[rel="apple-touch-icon"]').forEach(el => el.remove());
+    [
+      { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
+      { rel: 'icon', href: '/favicon-32x32.png', type: 'image/png', sizes: '32x32' },
+      { rel: 'icon', href: '/favicon-16x16.png', type: 'image/png', sizes: '16x16' },
+      { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }
+    ].forEach(attrs => {
+      const link = document.createElement('link');
+      Object.entries(attrs).forEach(([key, value]) => link.setAttribute(key, value));
+      document.head.appendChild(link);
+    });
+  };
+
   const applyLanguage = () => {
     document.documentElement.lang = ar ? 'ar' : 'en';
     body.dir = ar ? 'rtl' : 'ltr';
@@ -35,6 +50,7 @@
     }));
   }
 
+  installFavicon();
   applyLanguage();
 
   // Vercel Web Analytics loader for static HTML. It becomes active when Web Analytics is enabled for the project.
