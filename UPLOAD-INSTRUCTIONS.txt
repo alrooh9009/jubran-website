@@ -1,11 +1,37 @@
-FILES TO UPLOAD TO THE ROOT OF jubran-website
+JUBRAN WEBSITE — READY TO UPLOAD
 
-1) when-money-invests-law-comes-first.html
-2) publications.html   (replace the existing file)
-3) sitemap.xml         (replace the existing file)
+Upload ALL files in this folder to the ROOT of the GitHub repository:
+alrooh9009/jubran-website
 
-Important:
-- Extract this ZIP first. GitHub does not automatically unpack ZIP uploads into the repository.
-- Upload the three files to the repository root (same level as index.html and insight.css).
-- If GitHub asks about replacing existing files, replace publications.html and sitemap.xml.
-- The article page uses the existing insight.css already in your repository.
+Replace the existing files when GitHub asks:
+- index.html
+- about.html
+- experience.html
+- insights.html
+- publications.html
+- credentials.html
+- contact.html
+
+Add these new/shared files:
+- site.css
+- site.js
+- Jubran_Alsughayyir_CV.pdf
+
+IMPORTANT:
+1. Extract this ZIP first.
+2. Upload the FILES themselves to the repository root — do not upload the enclosing folder.
+3. Keep the existing article HTML files, insight.css, PDFs, sitemap.xml, robots.txt and vercel.json. Do not delete them.
+4. After committing, Vercel should deploy automatically from GitHub.
+5. When Vercel is READY, hard-refresh the website (Ctrl+F5).
+
+This upgrade includes:
+- streamlined homepage
+- Featured Legal Insights near the top
+- reduced duplication / stronger selected matters
+- fixed page canonical URLs
+- consistent navigation with Insights
+- mobile hamburger menu
+- improved Arabic toggle/content
+- updated About copy
+- Download CV links
+- favicon / metadata / structured-data improvements
