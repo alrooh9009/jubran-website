@@ -1,37 +1,25 @@
-JUBRAN WEBSITE — READY TO UPLOAD
+JUBRAN WEBSITE — SSRN / DOI UPDATE PACKAGE
+Date: 14 September 2026
 
-Upload ALL files in this folder to the ROOT of the GitHub repository:
-alrooh9009/jubran-website
-
-Replace the existing files when GitHub asks:
-- index.html
-- about.html
-- experience.html
-- insights.html
-- publications.html
-- credentials.html
-- contact.html
-
-Add these new/shared files:
-- site.css
-- site.js
-- Jubran_Alsughayyir_CV.pdf
+FILES TO REPLACE IN THE ROOT OF THE GITHUB REPOSITORY:
+1. publications.html
+2. performance-shortfalls-saudi-epc-projects.html
+3. sitemap.xml
+4. robots.txt
 
 IMPORTANT:
-1. Extract this ZIP first.
-2. Upload the FILES themselves to the repository root — do not upload the enclosing folder.
-3. Keep the existing article HTML files, insight.css, PDFs, sitemap.xml, robots.txt and vercel.json. Do not delete them.
-4. After committing, Vercel should deploy automatically from GitHub.
-5. When Vercel is READY, hard-refresh the website (Ctrl+F5).
+- Extract this ZIP before uploading.
+- Upload the extracted files to the ROOT of the repository.
+- GitHub should replace the existing files with these exact filenames.
+- Do NOT upload them with names such as "publications (1).html".
+- If "publications (1).html" already exists in the repository, delete it after confirming publications.html is correct.
+- Keep all other existing website files, PDFs, images, CSS, JS, CV, and research papers unchanged.
 
-This upgrade includes:
-- streamlined homepage
-- Featured Legal Insights near the top
-- reduced duplication / stronger selected matters
-- fixed page canonical URLs
-- consistent navigation with Insights
-- mobile hamburger menu
-- improved Arabic toggle/content
-- updated About copy
-- Download CV links
-- favicon / metadata / structured-data improvements
+THIS UPDATE ADDS:
+- SSRN link: https://ssrn.com/abstract=7426538
+- DOI: https://doi.org/10.2139/ssrn.7426538
+- ORCID: https://orcid.org/0009-0000-9994-4770
+- Preprint status
+- Official SSRN citation
+- Updated ScholarlyArticle structured data
+- Updated sitemap lastmod dates for the research and Publications page
